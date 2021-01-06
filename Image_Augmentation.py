@@ -1,3 +1,4 @@
+
 import random
 import numpy as np
 from keras.preprocessing.image import array_to_img
@@ -47,3 +48,5 @@ def process_imgs(generator, img, dir_name, path, num):
         out = Random_Erasing(bach[0])
         out_img = array_to_img(out)
         out_img.save(dir_name + '/' + path + str(i) + '.jpg', quality=95)       
+        
+
