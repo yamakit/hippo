@@ -7,4 +7,9 @@ staticフォルダにCSS,jsなどを入れる。
 
 
 -バックエンド-
-server.pyeを実行でプログラムが動く
+server.pyを実行でプログラムが動く
+
+
+
+-使い方-
+trainImgに拡張したい画像を入れ、main.pyを実行すると画像がoutputフォルダに出力される。(outputフォルダはなければ自動で作成される)
