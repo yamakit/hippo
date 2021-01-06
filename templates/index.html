@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>データ拡張</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">   
+</head>
+<!-- コメントアウトは[command+/] -->
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img class="icon" src="/Users/anzairui/Desktop/hipopo/image/S__49127426.jpg">
+            </div>
+            <div class="header-right">
+                <a href=# class="login">ログイン</a>
+            </div>
+        </div>
+    </header>
+<!-- アイウエオ -->
+    <div class="top-wrapper">
+        <div class="container">
+            <img class="logo-top" src="/Users/anzairui/Desktop/hipopo/image/S__49127426.jpg">
+            <!-- <h1>HIPPO<br>DEEP LEARNING FIRST STEP</h1> -->
+            <p>HIPPOは機械学習をする際のデータ拡張作業をお手伝いします。</p>
+            <a href="#" class="btn signup">新規登録</a>
+            <p>or</p>
+            <a href="#" class="btn facebook"　class="fa fa-facebook">Facebookで登録</a>
+            <a href="#" class="btn twitter" class="fa fa-twitter">Twitterで登録</a>
+            <a href="#" class="btn google" class="fa fa-google">Googleで登録</a>
+        </div>
+    </div>
+    <div class="explanationーwrapper">
+        <div class="container">
+            <div class="heading">
+                <h2>利用手順</h2>
+            </div>
+            <!-- proceduresは全部横にする -->
+            <div class="procedures">
+                <div class="procedure">
+                    <div class="procedure-icon">
+                        <!-- 手順の画像パワポで作って入れる -->
+                        <img class="procedure-img" src="/Users/anzairui/Desktop/hipopo/image/S__49127426.jpg">
+                        <p>1</p>
+                        <p class="text-contents">まず始めにデータ拡張を行いたい画像が入っている画像かファイルを選択するかドラッグ&ドロップします。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="procedures">
+                <div class="procedure">
+                    <div class="procedure-icon">
+                        <!-- 手順の画像パワポで作って入れる -->
+                        <img class="procedure-img" src="/Users/anzairui/Desktop/hipopo/image/S__49127426.jpg">
+                        <p>2</p>
+                        <p class="text-contents">実行ボタンを押すと選択した画像に反転処理やグレースケール化などの加工を行い画像を複製します。またオプションボタンでは画像加工の種類や枚数を指定できます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="procedures">
+                <div class="procedure">
+                    <div class="procedure-icon">
+                        <!-- 手順の画像パワポで作って入れる -->
+                        <img class="procedure-img" src="/Users/anzairui/Desktop/hipopo/image/S__49127426.jpg">
+                        <p>3</p>
+                        <p class="text-contents">画像の複製が完了するとzipファイルでダウンロードされます</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jju -->
+    <!-- <div class="run-wrapper"> 
+        <div class="container">
+            <p>複製したい写真を選択してください</p>
+            <form method="post" enctype="multipart/form-data">
+                <input type="file" name="example" accept=".png, .jpg, .jpeg, .pdf, .doc">  
+                <button type="submit">実行する</button>
+            </form>
+        </div>-->
+    <!--ドラッグ&ドロップのエリア -->
+    <div id="upFileWrap">
+        <div id="inputFile">
+            <!-- ドラッグ&ドロップエリア -->
+            <p id="dropArea">ここにファイルをドロップしてください<br>または</p>
+        
+            <!-- 通常のinput[type=file] -->
+            <div id="inputFileWrap">
+                <input type="file" name="uploadFile" id="uploadFile">
+                <div id="btnInputFile"><span>ファイルを選択する</span></div>
+                <div id="btnChangeFile"><span>ファイルを変更する</span></div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!-- この辺の処理ないにで書くかわかってない -->
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="icon-logo">
+                <!-- アイコン画像入れる -->
+                <img class="footer-icon" src="/Users/anzairui/Desktop/hipopo/image/S__49127426.jpg">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,289 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ここから記述 */
+
+/* サイト外枠 */
+html:before,
+html:after,
+body:before,
+body:after {
+  content: "";
+  background: #000000;
+  position: fixed;
+  display: block;
+  z-index: 1;
+}
+
+/* 上 */
+html:before {
+  height: 20px; 
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
+
+/* 右 */
+html:after {
+  width: 20px;
+  height: 100vh;
+  right: 0;
+  top: 0;
+}
+
+/* 下 */
+body:before {
+  height: 20px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
+
+/* 左 */
+body:after {
+  width: 20px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.top-wrapper{
+  background-color:#F4F5F7;
+  color:rgb(0, 0, 0);
+  background-size:cover;
+  padding:130px 0 10px 0;
+  text-align:center;
+}
+.container{
+  width:1170px;
+  margin:0 auto;
+}
+.top-wrapper h1{
+  font-size:45px;
+    /* opacityもっと詰めてもいい */
+  opacity:0.7;
+  letter-spacing:5px;
+}
+.top-wrapper p{
+  opacity:0.7;
+  margin-bottom:15px;
+}
+.signup {
+  background-color: #239b76;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.facebook {
+  background-color:#3b5998;
+  margin-right:10px;
+  }
+.twitter {
+  background-color:#55acee;
+  margin-right:10px;
+}
+.google {
+  background-color:rgb(252, 182, 54);
+}
+.btn {
+  padding:8px 24px;
+  display:inline-block;
+  color:white;
+  border-radius:4px;
+  opacity:0.8;
+}
+.btn:hover {
+  opacity:1;
+}
+.fa {
+  margin-right:5px;
+}
+header {
+  width:100%;
+  background-color:rgb(0, 0, 0);
+  height:65px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+    
+}
+.icon{
+  height:65px;
+  width:65px;
+}
+
+.header-left{
+  float:left;
+}
+.header-right {
+  float:right;
+  background-color:rgba(255,255,255,0.3);
+  transition: all 0.5s;
+}
+.header-right:hover {
+  background:rgba(255,255,255,0.5);
+}
+.header-right a {
+  line-height:65px;
+  padding: 0 25px;
+  color:white;
+  display:block;
+    
+}
+.logo-top{
+  height:460px;
+  width:460px;
+}
+.explanationーwrapper{  
+  height:580px;
+  background-color:#F4F5F7;
+  text-align:center;
+}
+.heading {
+  padding-top:80px;
+  padding-bottom:50px;
+  color:#5f5d60;
+}
+/* font-weight=字の太さ */
+.heading h2 {
+  font-weight:normal;
+}
+.procedure-icon {
+  float:left;
+}
+.procedure-img {
+  height:300px;
+  width:300px;
+}
+.procedures {
+  float:left;
+  width:33%;
+}
+.text-contents {
+  font-size:13px;
+  width:80%;
+  display:inline-block;
+  color:rgb(0, 0, 0)  ;
+}
+
+#inputFile {
+  position: relative;
+  padding: 180px 100px;
+  text-align: center;
+  /* inputファイル全体のbackground */
+  background-color:#F4F5F7;
+}
+
+ #dropArea { 
+  position: absolute;
+  top: 50px;
+  left:112px;
+  width: 80%;
+  height: 60%;
+  padding: 100px 0 0;
+  border: 2px dashed #494949;
+  background:#f2f2f2;
+  transition: all 0.25s cubic-bezier(0.21, 0.51, 0.51, 1);
+}
+/* #dropArea {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0 0;
+  border: 2px dashed #494949;
+  background: rgba(22, 165, 191, 0);
+  transition: all 0.25s cubic-bezier(0.21, 0.51, 0.51, 1);
+}*/
+
+
+#dropArea.dragover {
+  border: 2px solid #16a5bf;
+  background: rgba(22, 165, 191, 0.6);
+}
+/* position:absolute絶対配置 */
+#uploadFile {
+  position: absolute; 
+  top: 50px;
+  left: 100px;
+  z-index: 10;
+  display: block;
+  width: 300px;
+  height: 80px;
+  opacity: 0;
+}
+
+#inputFileWrap {
+  position: relative;
+  display: inline-block;
+  /* 枠上の場所 */
+  padding:150px 100px;
+}
+
+#btnInputFile,
+#btnChangeFile {
+  display: table;
+  width: 300px;
+}
+
+#btnChangeFile {
+  display: none;
+}
+
+
+#btnInputFile span,
+#btnChangeFile span {
+  position: relative;
+  z-index: 2;
+  display: table-cell;
+  width: 300px;
+  height: 80px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#upFileWrap.selected #btnInputFile {
+  display: none;
+}
+
+#upFileWrap.selected #btnChangeFile {
+  display: table;
+}
+.upFileWrap {
+  background-color:#F4F5F7;
+}
+footer img{
+  width:124px;
+}
+
+footer {
+  padding:30px 0 30px 0;
+  border-top:1px solid #eee;
+}
+
+.footer-icon {
+  width:65px;
+  height:65px;
+}
