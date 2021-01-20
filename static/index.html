@@ -89,6 +89,10 @@
             <!-- 通常のinput[type=file] -->
             <div id="inputFileWrap">
                 <input type="file" name="uploadFile" id="uploadFile">
+                <form action="/upload" method="post" enctype="multipart/form-data"> 
+                    <input type="file" name="uploadFile_aa"/ multiple="multiple">
+                    <input type="submit" value="アップロード"/>
+                  </form>
                 <div id="btnInputFile"><span>ファイルを選択する</span></div>
                 <div id="btnChangeFile"><span>ファイルを変更する</span></div>
             </div>
